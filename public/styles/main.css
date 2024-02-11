@@ -1,0 +1,140 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #9dbad6;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50%;
+    display: flow-root
+}
+
+.container .logo {
+    text-align: center
+}
+
+.container .logo h1 {
+    padding-top: 0.2rem;
+    font-family: Molengo, sans-serif;
+    font-size: 60px;
+}
+
+.jokeWrapper {
+    width: 85%;
+    min-height: 380px;
+    background-color: #3a69c0;
+    border-radius: 10px;
+    margin-inline: auto;
+    min-width: 350px;
+    margin-block: 5%
+}
+
+nav {
+    padding-block: .7rem;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgb(38, 35, 35)
+}
+
+nav .others>* {
+    color: #121111;
+    padding-inline: .5rem
+}
+
+.category {
+    margin: 1rem auto;
+    font-weight: 650;
+    /* background-color: #c0b2b2; */
+    background-color: white;
+    min-width: 25%;
+    max-width: 50%;
+    text-align: center;
+    padding: .5rem .5rem;
+    border-radius: 10px
+}
+
+.main {
+    font-family: Molengo, sans-serif;
+    position: relative;
+    margin: 0 auto;
+    min-width: 85%;
+    max-width: 90%;
+    font-size: 1.4rem;
+    padding: 2rem 1rem;
+    font-weight: 550;
+    font-stretch: expanded;
+    /* background-color: #c17f7f; */
+    background-color: white;
+    border-radius: 20px
+}
+
+svg{
+    opacity: .9;
+    cursor: pointer;
+    position: absolute;
+    top: -.1rem;
+    right: .5rem;
+    height: 20px;
+    width: 20px;
+}
+
+.myButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    /* background: rgb(143, 103, 103); */
+    background-color: white;
+    padding: .3rem 2rem
+}
+
+@media screen and (min-width:659px) {
+    .container {
+        width: 60rem
+    }
+}
+
+@media screen and (max-width:650px) {
+    .container .logo h1 {
+        font-size: 1.5rem
+    }
+
+    .container .logo h1>span img {
+        width: 30px;
+        height: 30px
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.2rem
+    }
+
+    .main {
+        font-size: .9rem
+    }
+
+    .category {
+        font-size: .7rem
+    }
+}
